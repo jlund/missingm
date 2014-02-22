@@ -1,0 +1,23 @@
+# General Jekyll Config
+pygments: true
+url: https://missingm.co
+lsi: false
+exclude: [Lagom-LICENSE, .gitignore]
+markdown: kramdown
+permalink: /:year/:month/:title/
+
+# Theme customization - please change from the defaults!
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#002b6c'
+
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: jlund
+    twitter: joshualund
+
+  name: MissingM
+  email: josh@joshlund.com
+
+  # Toggle "Postings are my own" disclaimer in footer
+  show_disclaimer: false

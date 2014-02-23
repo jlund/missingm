@@ -9,7 +9,7 @@ permalink: /:year/:month/:title/
 # Theme customization - please change from the defaults!
 theme:
   # Color for top bar, links, etc
-  highlight_color: '#002b6c'
+  highlight_color: '#142dea'
 
   # Profile links on the left sidebar, leave blank to ignore
   social:

@@ -21,6 +21,20 @@ It seems more than appropriate on [The Day We Fight Back][5] to take a look at t
 
 * * *
 
+## [BBM][91]
+
+BBM was not originally part of this comparison, but the [recent release of BBM 2.0][92] has revealed that there are far too many people who still consider it to be secure. This is a mistake. BBM is closed source, it is not suitable for sensitive communication, and it does not deserve to be compared alongside other encrypted messaging applications---unless (as here) it's being done as a warning.
+
+It has only been about a year and a half since the news broke that BlackBerry Limited (formerly known as Research In Motion) had [reached an agreement][93] to provide India's government with access to its customer's communication details. These details would not be accessible if the system were using true end-to-end encryption. The following quote from the Wall Street Journal article demonstrates that for most BBM users this type of encryption is not present (emphasis added):
+
+> India's focus in the talks has been on data routed through RIM's system for corporate email, BlackBerry Enterprise Server, and its instant messaging service, BlackBerry Messenger, which has high levels of encryption. **RIM already has provided the government with solutions to conduct lawful surveillance of emails held by individuals and BlackBerry Messenger.** But the company says it can't decrypt the corporate emails. 
+
+If you are using BBM via your company's [BlackBerry Enterprise Server][94], then you might be OK. But if you are just a regular user who optimistically downloads BBM from the App Store or Google Play you do *not* fall into this category. "Security" and "encryption" are not mentioned at all in the new [BBM feature list][95], nor are they mentioned in the [FAQ][96]. In my opinion, BBM is on about the same level as WhatsApp or Facebook Messenger in terms of security.
+
+A list of pros and cons isn't necessary. There are only cons. Don't let nostalgia cloud your judgement.
+
+* * *
+
 ## [ChatSecure][6]
 
 [The Guardian Project][7] recently rebranded their Gibberbot client as ChatSecure in order to match Chris Ballinger's [iOS client of the same name][8]. The move was [not without controversy][9]. But, hey, ChatSecure uses [OTR][10] and everyone loves OTR! It's a proven solution, and as a nice side-benefit ChatSecure is able to work with all of the various desktop applications that support [XMPP][11].
@@ -269,7 +283,7 @@ Like skeptical parents who are on the verge of letting you go to the cool sleepo
 
 # Final Thoughts
 
-That's the state of things at this point in time. Perhaps some of you may be wondering where [TigerText][86], [Wickr][87], and various other options are in the above comparison. Well, if they can't be bothered to release *any* source code, fail to provide even basic protocol documentation, and have not posted a threat model analysis, then they are not worthy of your time or your attention. If there is something that I have missed, or if you notice any mistakes, please [let me know][88] and I will take care of it immediately. If the developers of any of the above applications would like to respond in detail to any of the points that were raised, I will happily include such comments alongside my writeup.
+That's the state of things at this point in time. Perhaps some of you may be wondering where [myEnigma][89], [Redact][90], [TigerText][86], [Wickr][87], and various other options are in the above comparison. Well, if they can't be bothered to release *any* source code, fail to provide even basic protocol documentation, and have not posted a threat model analysis, then they are not worthy of your time or your attention. If there is something that I have missed, or if you notice any mistakes, please [let me know][88] and I will take care of it immediately. If the developers of any of the above applications would like to respond in detail to any of the points that were raised, I will happily include such comments alongside my writeup.
 
 My sincere thanks to all of the organizations that are fighting to protect our messages from dragnet surveillance. I am optimistic that we will soon have several viable choices for securing the thoughts and hopes and dreams that we share with all of the people who are close to us---a list that does not include the NSA or GCHQ.
 
@@ -363,3 +377,11 @@ SMS is dead, long live privacy.
  [86]: http://www.tigertext.com/
  [87]: https://www.mywickr.com/en/index.php
  [88]: mailto:josh@joshlund.com
+ [89]: https://www.myenigma.com/
+ [90]: http://www.redactapp.com/
+ [91]: http://http://www.bbm.com/
+ [92]: http://blogs.blackberry.com/2014/02/bbm-2-update/
+ [93]: http://online.wsj.com/news/articles/SB10000872396390443404004577576614174157698
+ [94]: http://us.blackberry.com/business/software/bes/overview.html
+ [95]: http://www.bbm.com/bbm/en/bbm-features.html
+ [96]: http://www.bbm.com/bbm/en/bbm-faq.html

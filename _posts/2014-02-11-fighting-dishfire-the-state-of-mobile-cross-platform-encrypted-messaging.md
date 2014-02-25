@@ -191,25 +191,31 @@ If I could pick a single client and magically will it into immediate cross-platf
 
 So far the TextSecure V2 protocol has only been rolled out to [Cyanogenmod][73] users as part of its [WhisperPush functionality][74]. This is a major accomplishment in its own right because it means that approximately 10 million people will automatically get the benefits of encrypted messaging without any effort on their part. TextSecure is available on Android, of course, and has been for years, but the current version in the Play Store is still using the old protocol. The release of the new Android version that incorporates a [brand-new design][75], push-based data channel messaging (instead of SMS), the [Axolotl ratchet][55], prekeys, Curve25519, and all of the other massive improvements [looks to be imminent][76]. I can't wait.
 
+**Update:** TextSecure version 2.0 is [now available][92] for Android!
+
 The current Android version is tough to recommend to everyday users because the MMS support is so poor. To be clear, I place all of the blame for this on the carriers who developed such an awful standard in the first place. When I try to send a picture to an AT&T user they receive only an obscure message size failure warning even though Verizon, Sprint, and T-mobile subscribers can all receive them just fine. TextSecure has no support for group messaging either, so MMS messages that are sent to multiple people don't get threaded properly. You used to be able to work around these issues by telling TextSecure not to handle MMS and using the standard messaging application for pictures, videos, and group messages, but this is no longer possible in Android 4.4 KitKat. More than half of the people I convinced to install TextSecure ended up uninstalling it due to the MMS and group messaging issues. The new version will solve this by skipping the SMS/MMS transport layer entirely.
+
+**Update:** TextSecure version 2.0 fixes most of these issues. Using it as a standalone application that only processes messages from other TextSecure users is once again possible. MMS group messages also work perfectly. Sending images via MMS to AT&T users is still broken for me.
 
 OK, great, it's already decent on Android if you can deal with some hiccups and is about to get even better. What about iOS? The good news is that it's [already in progress][77]. The bad news is that it's probably going to be a while. At Whisper System's recent Spring Break of Code event, Christine Corbett, one of the lead developers of TextSecure for iOS, announced plans to merge TextSecure and RedPhone (Whisper System's open source encrypted telephony program) into a [single unified application][78]. This is a great move because it means that users won't be fragmented across two different mediums. If someone has Whisper installed you will be able to use your choice of text or voice to communicate with them. Sometime soon, Whisper for iOS will come out with voice support. Text support will come later.
 
 How much later? That's a good question. My hope is that the RedPhone for iOS team members (who are currently toiling away in a skunkworks non-GitHub repo) will join forces as soon as possible with [Christine][79] and [Frederic][80] to help them finish the TextSecure functionality so that it can be merged into the nascent iOS application shortly after it is released. Not having to duplicate efforts on contact list management and other shared UI areas should prove to be helpful. At the moment, TextSecure's V2 protocol is [still being fleshed out on iOS][81] and there are several other components that have not been implemented yet. Major progress has been made, but there is still a lot of work to be done. If I had to guess (and I should stress that this is just a hunch) I would say that it's probably going to be sometime this summer at the earliest before Whisper for iOS supports text messaging functionality.
 
-When that happens, Silent Circle will finally have a cross-platform competitor that supports voice and text. Unlike Silent Circle, it will be open source (instead of "kinda") and supported by community donations (instead of mandatory $9.95 subscriptions). Moxie et al. are in their own league entirely, and they have big plans. Whisper will be worth the wait.
+**Update:** I'm extremely happy to report that I might be wrong about this. The rate of commits has picked up significantly over the past few days, and Christine Corbett now says that they are ["racing the RedPhone iOS team"](https://twitter.com/moxie/status/438028465623674881) instead of waiting for them.
+
+When Whisper is released, Silent Circle will finally have a cross-platform competitor that supports voice and text. Unlike Silent Circle, it will be open source (instead of "kinda") and supported by community donations (instead of mandatory $9.95 subscriptions). Moxie et al. are in their own league entirely, and they have big plans. Whisper will be worth the wait.
 
 **Pros:**
 
 *   The very best protocol design, implemented by people who know what the hell they are doing
 *   A very large userbase, thanks to the Cyanogenmod integration
 
-**Cons** (all of these will be fixed in V2):
+**Cons:**
 
-*   Encrypted SMS/MMS messages leak metadata to the telcos
-*   MMS is horrible, and TextSecure has some issues dealing with it
-*   No group messaging
-*   The anticipation is killing me
+*   <del>Encrypted SMS/MMS messages leak metadata to the telcos</del> This transport layer is now optional in v2. Messages are sent over the data channel by default.
+*   <del>MMS is horrible, and TextSecure has some issues dealing with it</del> Most of these problems have been solved, but sending pictures to non-TextSecure users is still hit-and-miss
+*   <del>No group messaging</del> v2 supports encrypted group messaging and it works very well
+*   The anticipation for an iOS release is killing me
 
 * * *
 
@@ -245,23 +251,16 @@ Like skeptical parents who are on the verge of letting you go to the cool sleepo
 
 **Android to Android:**
 
-*   Use Surespot. It's faster, less annoying, and more reliable than the SMS/MMS transport that TextSecure is still using.
+*   Use [TextSecure version 2.0][93]
 
 **iOS to Android (or vice-versa), iOS to iOS:**
 
-*   <del datetime="2014-02-17T05:14:09+00:00">Use Threema</del> Use Surespot
-
-## Tomorrow
-
-**Android to Android:**
-
-*   Use TextSecure as soon as the V2 version is released
-
-<del datetime="2014-02-17T05:14:09+00:00"><strong>iOS to Android (or vice-versa), iOS to iOS:</strong></del>
-
-<del datetime="2014-02-17T05:14:09+00:00">* Use Surespot as soon as the iOS version is released</del>
+*   Use [Surespot][47]
+*   If you need encrypted group messaging, use [Threema][82]
 
 ## The Hopefully Not Too Distant Future
+
+**Android and iOS:**
 
 *   Use Whisper as soon as it comes out. Encrypted phone calls and text messaging bundled together in a unified interface that will be available on both iOS and Android? Hell yes.
 
@@ -368,3 +367,5 @@ SMS is dead, long live privacy.
  [89]: https://www.myenigma.com/
  [90]: http://www.redactapp.com/
  [91]: /2014/02/avoid-bbm/
+ [92]: https://whispersystems.org/blog/the-new-textsecure/
+ [93]: https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms

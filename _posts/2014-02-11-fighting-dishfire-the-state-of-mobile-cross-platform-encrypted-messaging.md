@@ -234,7 +234,7 @@ Like skeptical parents who are on the verge of letting you go to the cool sleepo
 **Pros:**
 
 *   <del datetime="2014-02-17T05:14:09+00:00">By far the best cross-platform option that is available right now, and I have tried them all</del> Threema remains an excellent choice, but Surespot takes the crown now that it is available for iOS (and fully open source)
-*   The best option for encrypted group messaging
+*   The best option for cross-platform encrypted group messaging
 *   Good documentation
 *   Extremely easy to set up and use
 

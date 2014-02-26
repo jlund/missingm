@@ -166,7 +166,7 @@ Perhaps the biggest compliment that I can pay to Surespot is that it's easy to a
 
 ## [Telegram][58]
 
-Smarter people than me have [analyzed][59] [Telegram][60] [to][61] [death][62]. I have very little to add. The consensus is that the [MTProto][63] protocol is not all that great and is based on puzzlingly obscure techniques and ancient cryptographic primitives like [SHA-1][64] that are eagerly being deprecated by the rest of the world. In the interest of fairness, Telegram's response to all of this can be found [here][65].
+Smarter people than me [have][94] [analyzed][59] [Telegram][60] [to][61] [death][62]. I have very little to add. The consensus is that the [MTProto][63] protocol is not all that great and is based on puzzlingly obscure techniques and ancient cryptographic primitives like [SHA-1][64] that are eagerly being deprecated by the rest of the world. In the interest of fairness, Telegram's response to all of this can be found [here][65].
 
 Telegram is growing like crazy and recently has been racking up [more than 200,000 new users every day in Spain alone][66]. I was really excited when I first heard about it. I mean, here was an encrypted messaging application that was available for iOS and Android, and it was open source! People are actually using it! But cryptography is hard, and they seem to have done a poor job of it. I'm staying away for now.
 
@@ -369,3 +369,4 @@ SMS is dead, long live privacy.
  [91]: /2014/02/avoid-bbm/
  [92]: https://whispersystems.org/blog/the-new-textsecure/
  [93]: https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms
+ [94]: http://www.cryptofails.com/post/70546720222/telegrams-cryptanalysis-contest

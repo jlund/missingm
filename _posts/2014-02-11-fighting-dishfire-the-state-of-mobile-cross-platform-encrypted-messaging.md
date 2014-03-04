@@ -75,9 +75,11 @@ Cryptocat has gone from an upstart that people viewed with bemused skepticism (a
 
 Cryptocat's efforts to prioritize usability and simplicity, thereby making encrypted messaging more accessible to mere mortals, is an example that more projects should follow. In contrast with ChatSecure, for instance, it's not possible to accidentally have a plaintext chat using Cryptocat. Encryption is an implementation detail that is largely obscured from users. This is a good thing.
 
-The Android and iOS versions were [announced on December 5th][27] and the source code for the projects is available for review on [GitHub][28]. A public release of both clients should happen soon. Unfortunately it looks like Cryptocat is going to suffer from many of the same issues as ChatSecure. A cursory review of the source code does not reveal any push notification support at the moment, for either platform, which likely means that users will need to have the application open in order to communicate or else they will run into the dreaded 10-minute time limit on iOS. This is a huge step backwards compared to SMS in terms of usability.
+The Android and iOS versions were [announced on December 5th][27] and the source code for the projects is available for review on [GitHub][28]. A public release of both clients should happen soon. Unfortunately it looks like Cryptocat is going to suffer from many of the same issues as ChatSecure. A cursory review of the source code does not reveal any push notification support at the moment, for either platform, which means that users will need to have the application open in order to communicate or else they will run into the dreaded 10-minute time limit on iOS. This is a huge step backwards compared to SMS in terms of usability.
 
 Normal users always choose convenience over security and Cryptocat Mobile is unlikely to win any new converts. But it will significantly improve the lives of existing users. Even if it may not immediately be the secure messaging replacement that we all want right now, the world will be better off with a mobile Cryptocat. I look forward to seeing how it develops over the coming months.
+
+**Update:** Cryptocat for iOS is [now available][95]. As expected, it cannot run in the background and does not support extended sessions. A notification appears just before you get logged out that says "Your chat session will end in a minute if you don't come back." But it's really simple and fast, and it perfectly matches the aesthetic of the browser extension. Cryptocat fans should be pleased. Good work, [Thomas][96]!
 
 **Pros:**
 
@@ -87,7 +89,7 @@ Normal users always choose convenience over security and Cryptocat Mobile is unl
 
 **Cons:**
 
-*   Not yet available
+*   Not yet available for Android
 *   The iOS client doesn't support APN push notifications, and the Android client doesn't support GCM push notifications
 *   Does not support photos, videos, or voice messages
 
@@ -370,3 +372,5 @@ SMS is dead, long live privacy.
  [92]: https://whispersystems.org/blog/the-new-textsecure/
  [93]: https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms
  [94]: http://www.cryptofails.com/post/70546720222/telegrams-cryptanalysis-contest
+ [95]: https://blog.crypto.cat/2014/03/cryptocat-now-on-iphone/
+ [96]: http://balthazar.info/

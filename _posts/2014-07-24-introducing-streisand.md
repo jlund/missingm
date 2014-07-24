@@ -17,3 +17,5 @@ It became clear that there was an enormous chasm between the simple solution peo
 Streisand aims to change that, and it is my sincere hope that it will help shift the balance of power back towards the people, where it belongs. As censorship attempts increase, more and more VPN servers will spring up--and now that process is **significantly** easier.
 
 Silence censorship. Automate the effect.
+
+[Streisand on GitHub](https://github.com/jlund/streisand)

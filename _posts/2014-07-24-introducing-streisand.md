@@ -19,3 +19,5 @@ Streisand aims to change that, and it is my sincere hope that it will help shift
 Silence censorship. Automate the effect.
 
 [Streisand on GitHub](https://github.com/jlund/streisand)
+
+[Comments on Hacker News](https://news.ycombinator.com/item?id=8082444)
